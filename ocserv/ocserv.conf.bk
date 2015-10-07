@@ -68,8 +68,8 @@ auth = "plain[/etc/ocserv/ocpasswd]"
 #listen-host-is-dyndns = true
 
 # TCP and UDP port number
-tcp-port = 443
-udp-port = 443
+tcp-port = 1443
+udp-port = 1443
 
 # Accept connections using a socket file. It accepts HTTP
 # connections (i.e., without SSL/TLS unlike its TCP counterpart),
@@ -165,8 +165,8 @@ try-mtu-discovery = true
 # but each key should correspond to the preceding certificate.
 #server-cert = ../tests/server-cert.pem
 #server-key = ../tests/server-key.pem
-server-cert = /opt/certs/server-cert.pem
-server-key = /opt/certs/server-key.pem
+server-cert = /etc/ocserv/server-cert.pem
+server-key = /etc/ocserv/server-key.pem
 
 
 # Diffie-Hellman parameters. Only needed if you require support
